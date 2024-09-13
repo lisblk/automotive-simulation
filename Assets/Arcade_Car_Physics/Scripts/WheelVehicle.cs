@@ -296,7 +296,12 @@ namespace VehicleBehaviour {
                     throttle = GetInput(throttleInput) * (reverse?-1f:1);
                 }
                 breaking = Mathf.Clamp01(GetInput(brakeInput));
-                playerAvatar.SetBreakLights(breaking > 0);
+
+                if (playerAvatar != null) {
+                    playerAvatar.SetBreakLights(breaking > 0);
+                } else {
+                    Debug.LogWarning("PlayerAvatar is not assigned.");
+                }
                 // Turn
                 steering = turnInputCurve.Evaluate(GetInput(turnInput)) * steerAngle;
             }
