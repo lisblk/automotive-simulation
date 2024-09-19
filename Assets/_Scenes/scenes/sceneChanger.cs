@@ -37,7 +37,7 @@ public class SceneChanger : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if (!isObjectFullyInside && IsFullyInside(other))
+        if (!isObjectFullyInside && IsFullyInside(other) && other.CompareTag("ManualCar"))
         {
             isObjectFullyInside = true;
             // Your logic for when the full object is inside

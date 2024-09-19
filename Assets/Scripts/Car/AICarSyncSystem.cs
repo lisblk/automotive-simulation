@@ -130,7 +130,11 @@ public class AICarSyncSystem
         _poses.Clear();
         foreach (var car in Cars)
         {
-            _poses.Add(car.GetPose());
+            if (car != null)
+            {
+                _poses.Add(car.GetPose());
+            }
+            
         }
         return _poses;
     }

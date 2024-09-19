@@ -76,8 +76,9 @@ public class NetworkingManager : MonoBehaviour
         if (CurrentTrialIndex < trials.Length)
         {
             (_netSystem as Host).Shutdown();
-            _netSystem = new Host(_levelManager, _playerSystem, _aiCarSystem, _logger, _fixedLogger, trials[CurrentTrialIndex]);
             _playerSystem.ClearAvatarReferences();
+            _netSystem = new Host(_levelManager, _playerSystem, _aiCarSystem, _logger, _fixedLogger, trials[CurrentTrialIndex]);
+            
             
         } else
         {

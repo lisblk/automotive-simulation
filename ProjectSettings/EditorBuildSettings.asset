@@ -17,6 +17,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/scenes/scene2.unity
     guid: 5659b8620beb8744a8202a12558a780f
+  - enabled: 1
+    path: Assets/_Scenes/scenes/scene3.unity
+    guid: 6a7caeb40e270a9498f7279fc4165ff8
+  - enabled: 1
+    path: Assets/_Scenes/scenes/scene4.unity
+    guid: 6a100ab9a9fab3e47bc04d1c51d5a82c
+  - enabled: 1
+    path: Assets/_Scenes/scenes/scene5.unity
+    guid: 4e876579884b81d4b9d1002544669d56
   - enabled: 0
     path: Assets/_Scenes/MainScene-night.unity
     guid: a2e9c1d3aade74424a398f9e50c01625

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -61,11 +61,17 @@ public class Host : NetworkSystem
     public void Shutdown()
     {
         _host.Shutdown();
-        _host = null;
-        _host = new UNetHost();
-        _host.Init();
         _currentState = NetState.Disconnected;
     }
+
+    public void Cleanup()
+{
+    // Clean up player avatars or other persistent objects here
+    _playerSys.ClearAvatarReferences(); // Implement this method in PlayerSystem
+    _logger.EndLog(); // Implement this method in WorldLogger to stop logging and clear references
+    // _fixedTimeLogger.ClearLogs(); // Same as above for fixed logger
+}
+
 
     //handles ping message
     private void OnPing(ISynchronizer sync, int srcPlayerId)
