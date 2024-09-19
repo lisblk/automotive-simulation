@@ -61,6 +61,9 @@ public class Host : NetworkSystem
     public void Shutdown()
     {
         _host.Shutdown();
+        _host = null;
+        _host = new UNetHost();
+        _host.Init();
         _currentState = NetState.Disconnected;
     }
 

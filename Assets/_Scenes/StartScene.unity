@@ -293,14 +293,45 @@ MonoBehaviour:
   RealtimeLogInterval: 0.2
   _aiCarSystem:
     Prefabs:
-    - {fileID: 7713759469045616529, guid: 1baf460ab026f1247ab4696be569ffae, type: 3}
+    - {fileID: 7713759469045616529, guid: d5147c311a7f48b4f89937320f6149b9, type: 3}
   Experiments:
   - {fileID: 8692043556341430772, guid: c5af73a307f19ac4b92fb4251cc579e0, type: 3}
+  - {fileID: 8692043556341430772, guid: 817fc72dbf7b3d64080764d7a80cfd68, type: 3}
   hideGui: 0
-  RunTrialSequenceAutomatically: 0
+  RunTrialSequenceAutomatically: 1
   recordVideos: 0
   trials:
   - experimentIndex: 0
+    roleIndex: 0
+    InputMode: 0
+    experimentParameters:
+    - name: target_labeled
+      value: true
+    - name: ego_labeled
+      value: false
+    recordingStartTime: 0
+    recordingDuration: 25
+  - experimentIndex: 1
+    roleIndex: 0
+    InputMode: 0
+    experimentParameters:
+    - name: target_labeled
+      value: true
+    - name: ego_labeled
+      value: false
+    recordingStartTime: 0
+    recordingDuration: 25
+  - experimentIndex: 1
+    roleIndex: 0
+    InputMode: 0
+    experimentParameters:
+    - name: target_labeled
+      value: true
+    - name: ego_labeled
+      value: false
+    recordingStartTime: 0
+    recordingDuration: 25
+  - experimentIndex: 1
     roleIndex: 0
     InputMode: 0
     experimentParameters:
@@ -328,7 +359,8 @@ MonoBehaviour:
     type: 3}
   _AvatarPrefabDriver:
   - {fileID: 7263647346857764255, guid: 02b8c28a357f14a4b922a9b99b9763ae, type: 3}
-  - {fileID: 541659659821446678, guid: dfe1eb2bf326a0f459c687648bd18684, type: 3}
+  - {fileID: 8938021727904404209, guid: d5147c311a7f48b4f89937320f6149b9, type: 3}
+  - {fileID: 8938021727904404209, guid: 17b3402f8059844229b79d4b6fe3db16, type: 3}
 --- !u!114 &301934535
 MonoBehaviour:
   m_ObjectHideFlags: 0

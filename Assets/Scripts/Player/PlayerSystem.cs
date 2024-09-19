@@ -202,4 +202,13 @@ public class PlayerSystem : MonoBehaviour
     {
         PlayerInputMode = inputMode;
     }
+
+    public void ClearAvatarReferences()
+    {
+        Avatars.Clear();
+        Cars.Clear();
+        Pedestrians.Clear();
+        Passengers.Clear();
+        LocalPlayer = null;
+    }
 }

@@ -49,6 +49,11 @@ public class NetworkingManager : MonoBehaviour
     {
         if (Instance == null) {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
         _playerSystem = GetComponent<PlayerSystem>();
@@ -65,14 +70,15 @@ public class NetworkingManager : MonoBehaviour
 
     static int CurrentTrialIndex;
 
-    void NextTrial()
-    {
+    public void NextTrial()
+    {   
         CurrentTrialIndex++;
-        Destroy(gameObject);
         if (CurrentTrialIndex < trials.Length)
         {
             (_netSystem as Host).Shutdown();
-            SceneManager.LoadScene(0);
+            _netSystem = new Host(_levelManager, _playerSystem, _aiCarSystem, _logger, _fixedLogger, trials[CurrentTrialIndex]);
+            _playerSystem.ClearAvatarReferences();
+            
         } else
         {
 #if UNITY_EDITOR
