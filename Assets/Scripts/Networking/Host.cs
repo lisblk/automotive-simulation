@@ -67,8 +67,8 @@ public class Host : NetworkSystem
     public void Cleanup()
 {
     // Clean up player avatars or other persistent objects here
-    _playerSys.ClearAvatarReferences(); // Implement this method in PlayerSystem
-    _logger.EndLog(); // Implement this method in WorldLogger to stop logging and clear references
+    // _playerSys.ClearAvatars(); // Implement this method in PlayerSystem
+    // _logger.ClearLogs(); // Implement this method in WorldLogger to stop logging and clear references
     // _fixedTimeLogger.ClearLogs(); // Same as above for fixed logger
 }
 
