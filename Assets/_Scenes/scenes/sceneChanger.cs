@@ -34,7 +34,7 @@ public class SceneChanger : MonoBehaviour
     void Update()
     {
         // Check for space bar press to trigger different text
-        if (Input.GetKeyDown(KeyCode.O) && !isTriggered)
+        if (Input.GetKeyDown(KeyCode.Space) && !isTriggered)
         {
             isTriggered=true;
             TriggerPopup(spaceTriggerString);
