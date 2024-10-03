@@ -6,11 +6,11 @@ using TMPro; // Import for TextMeshPro
 
 public class SceneChanger : MonoBehaviour
 {
-    public string sceneToLoad; // Name of the scene to load, currently unused
+    
     // This method is called when the player enters the trigger
-    private string succesString = "<size=8>Congratulations!\n <size=6>You trusted the car enough to let it park itself.\n<size=2>The next scene will load in 15 seconds, or press SPACE to skip.";
+    private string succesString = "<size=8>Congratulations!\n <size=5>You trusted the car enough to let it park itself.\n<size=2>The next scene will load in 15 seconds, or press ENTER to skip.";
 
-    private string spaceTriggerString = "<size=8>Woops!\n <size=6>You didn't trust the car enough to let it park itself.\n<size=2>The next scene will load in 15 seconds, or press SPACE to skip.";
+    private string spaceTriggerString = "<size=8>Woops!\n <size=5>You didn't trust the car enough to let it park itself.\n<size=2>The next scene will load in 15 seconds, or press ENTER to skip.";
 
     private NetworkingManager networkingManager;
     private bool isObjectFullyInside = false;
@@ -34,12 +34,13 @@ public class SceneChanger : MonoBehaviour
     void Update()
     {
         // Check for space bar press to trigger different text
-        if (Input.GetKeyDown(KeyCode.Space) && !isTriggered)
-        {
-            isTriggered=true;
-            TriggerPopup(spaceTriggerString);
-            isTriggered=false;
-        }
+        // if (Input.GetKeyDown(KeyCode.Space) && !isTriggered)
+        // {   
+        //     Debug.Log(isTriggered);
+        //     isTriggered=true;
+        //     TriggerPopup(spaceTriggerString);
+            
+        // }
     }
 
 
@@ -64,31 +65,34 @@ public class SceneChanger : MonoBehaviour
     void TriggerPopup(string message)
     {
         popupText.text = message; // Update the popup text based on trigger
-        Time.timeScale=0;
+        
         popupPanel.SetActive(true); // Show the popup UI
+        Time.timeScale=0;
         StartCoroutine(PopupTimer(displayDuration)); // Start the timer
+        
+        
     }
 
     IEnumerator PopupTimer(float duration)
     {
         float remainingTime = duration;
-
         // Optionally, allow pressing a key to skip the timer and proceed immediately
         while (remainingTime > 0)
         {
-            if (Input.GetKeyDown(KeyCode.Space)) // Press space to skip timer and proceed
+            if (Input.GetKeyDown(KeyCode.Return)) // Press space to skip timer and proceed
             {
                 break;
             }
 
-            remainingTime -= Time.deltaTime;
+            remainingTime -= Time.unscaledDeltaTime;
             yield return null;
         }
 
         // Hide the popup and load the next scene after the timer is done
-        popupPanel.SetActive(false);
         networkingManager.NextTrial();
+        popupPanel.SetActive(false);
         Time.timeScale = 1;
+        isTriggered=false;
     }
 
     void OnTriggerStay(Collider other)
@@ -124,6 +128,8 @@ public class SceneChanger : MonoBehaviour
         // Check if the object's bounds are fully inside the trigger's bounds
         return triggerBounds.Contains(objectBounds.min) && triggerBounds.Contains(objectBounds.max);
     }
+
+    
 }
 
 //     private void OnTriggerEnter(Collider other)
