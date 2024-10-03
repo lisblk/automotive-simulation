@@ -301,7 +301,7 @@ MonoBehaviour:
   - {fileID: 8692043556341430772, guid: e9875b3eceff0d94690aa7492aa7daf9, type: 3}
   - {fileID: 8692043556341430772, guid: c216a7cd363fd6044a0bf03054c428a6, type: 3}
   hideGui: 0
-  RunTrialSequenceAutomatically: 1
+  RunTrialSequenceAutomatically: 0
   recordVideos: 0
   trials:
   - experimentIndex: 0
