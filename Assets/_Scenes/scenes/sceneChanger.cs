@@ -8,9 +8,9 @@ public class SceneChanger : MonoBehaviour
 {
     
     // This method is called when the player enters the trigger
-    private string succesString = "<size=8>Congratulations!\n <size=5>You trusted the car enough to let it park itself.\n<size=2>The next scene will load in 15 seconds, or press ENTER to skip.";
+    private string succesString = "<size=8>Congratulations!\n <size=6>You trusted the car enough to let it park itself.\n<size=4>The next scene will load in 15 seconds, or press ENTER to skip.";
 
-    private string spaceTriggerString = "<size=8>Woops!\n <size=5>You didn't trust the car enough to let it park itself.\n<size=2>The next scene will load in 15 seconds, or press ENTER to skip.";
+    private string spaceTriggerString = "<size=8>Woops!\n <size=6>You didn't trust the car enough to let it park itself.\n<size=4>The next scene will load in 15 seconds, or press ENTER to skip.";
 
     private NetworkingManager networkingManager;
     private bool isObjectFullyInside = false;
