@@ -49,6 +49,7 @@ namespace UnityStandardAssets.Utility
         private int progressNum; // the current waypoint number, used in point-to-point mode.
         private Vector3 lastPosition; // Used to calculate current speed (since we may not have a rigidbody component)
         private float speed; // current speed of this object (calculated from delta since last frame)
+        public LineRenderer lineRenderer;
 
         // setup script properties
         public void Init(WaypointCircuit circuit)
@@ -135,6 +136,12 @@ namespace UnityStandardAssets.Utility
                     progressDistance += progressDelta.magnitude;
                 }
                 lastPosition = transform.position;
+            }
+            if (lineRenderer != null && target != null)
+            {
+                lineRenderer.positionCount = 2;  // Ensure position count is always 2
+                lineRenderer.SetPosition(0, new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z));  // Start at the vehicle's position
+                lineRenderer.SetPosition(1, new Vector3(target.position.x, target.position.y + 1.0f, target.position.z));     // End at the target position
             }
         }
 

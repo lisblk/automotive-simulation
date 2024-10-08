@@ -148,6 +148,11 @@ public class WorldLogger
         _driverBuffer.AddRange(_aiCarSystem.Cars);
         foreach (var driver in _driverBuffer)
         {
+            if (driver == null || driver.transform == null)
+            {
+                Debug.LogWarning("Driver is null or its transform is missing.");
+                continue;  // Skip this iteration if the driver is null or destroyed
+            }
             writer.Write(driver.transform.position);
             writer.Write(driver.transform.rotation);
             writer.Write((int)driver.CarBlinkers.State);
