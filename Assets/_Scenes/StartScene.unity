@@ -300,8 +300,12 @@ MonoBehaviour:
   - {fileID: 8692043556341430772, guid: 2c7a8dbde2088fe4a90faf4c5c3fcba5, type: 3}
   - {fileID: 8692043556341430772, guid: e9875b3eceff0d94690aa7492aa7daf9, type: 3}
   - {fileID: 8692043556341430772, guid: c216a7cd363fd6044a0bf03054c428a6, type: 3}
+  - {fileID: 8692043556341430772, guid: a5551ee1135df984eb9032e90d881ef9, type: 3}
+  - {fileID: 8692043556341430772, guid: 3e55d172b86db4d4b8ec8bff13d6407c, type: 3}
+  - {fileID: 8692043556341430772, guid: 9dd89dc97529ab84984ab2c6b3b7406f, type: 3}
+  - {fileID: 8692043556341430772, guid: 48e1543046f410b4ab930d06de53c283, type: 3}
   hideGui: 0
-  RunTrialSequenceAutomatically: 1
+  RunTrialSequenceAutomatically: 0
   recordVideos: 0
   trials:
   - experimentIndex: 0
@@ -345,6 +349,46 @@ MonoBehaviour:
     recordingStartTime: 0
     recordingDuration: 25
   - experimentIndex: 4
+    roleIndex: 0
+    InputMode: 0
+    experimentParameters:
+    - name: target_labeled
+      value: true
+    - name: ego_labeled
+      value: false
+    recordingStartTime: 0
+    recordingDuration: 25
+  - experimentIndex: 5
+    roleIndex: 0
+    InputMode: 0
+    experimentParameters:
+    - name: target_labeled
+      value: true
+    - name: ego_labeled
+      value: false
+    recordingStartTime: 0
+    recordingDuration: 25
+  - experimentIndex: 6
+    roleIndex: 0
+    InputMode: 0
+    experimentParameters:
+    - name: target_labeled
+      value: true
+    - name: ego_labeled
+      value: false
+    recordingStartTime: 0
+    recordingDuration: 25
+  - experimentIndex: 7
+    roleIndex: 0
+    InputMode: 0
+    experimentParameters:
+    - name: target_labeled
+      value: true
+    - name: ego_labeled
+      value: false
+    recordingStartTime: 0
+    recordingDuration: 25
+  - experimentIndex: 8
     roleIndex: 0
     InputMode: 0
     experimentParameters:
