@@ -74,13 +74,33 @@ namespace UnityStandardAssets.Utility
         public void Reset()
         {
             progressDistance = 4;
-            progressNum = 0;
+            progressNum = GetClosestWaypointIndex();
             lastPosition = transform.position;
             //if (progressStyle == ProgressStyle.PointToPoint)
             {
                 target.position = circuit.Waypoints[progressNum].position;
                 target.rotation = circuit.Waypoints[progressNum].rotation;
             }
+        }
+
+        private int GetClosestWaypointIndex()
+        {
+            float closestDistanceSqr = Mathf.Infinity; // Initialize with a large number
+            int closestIndex = 0;
+            Vector3 currentPosition = transform.position;
+
+            // Loop through all waypoints to find the closest one
+            for (int i = 0; i < circuit.Waypoints.Length; i++)
+            {
+                float distanceSqr = (circuit.Waypoints[i].position - currentPosition).sqrMagnitude;
+                if (distanceSqr < closestDistanceSqr)
+                {
+                    closestDistanceSqr = distanceSqr;
+                    closestIndex = i;
+                }
+            }
+
+            return closestIndex;
         }
 
         private void Update()

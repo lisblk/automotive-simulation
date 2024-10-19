@@ -294,6 +294,8 @@ MonoBehaviour:
   _aiCarSystem:
     Prefabs:
     - {fileID: 7713759469045616529, guid: d5147c311a7f48b4f89937320f6149b9, type: 3}
+    - {fileID: 7713759469045616529, guid: d5147c311a7f48b4f89937320f6149b9, type: 3}
+    - {fileID: 7713759469045616529, guid: d5147c311a7f48b4f89937320f6149b9, type: 3}
   Experiments:
   - {fileID: 8692043556341430772, guid: c5af73a307f19ac4b92fb4251cc579e0, type: 3}
   - {fileID: 8692043556341430772, guid: 817fc72dbf7b3d64080764d7a80cfd68, type: 3}
@@ -309,7 +311,7 @@ MonoBehaviour:
   recordVideos: 0
   trials:
   - experimentIndex: 0
-    roleIndex: 0
+    roleIndex: 1
     InputMode: 0
     experimentParameters:
     - name: target_labeled
@@ -319,7 +321,7 @@ MonoBehaviour:
     recordingStartTime: 0
     recordingDuration: 25
   - experimentIndex: 1
-    roleIndex: 0
+    roleIndex: 1
     InputMode: 0
     experimentParameters:
     - name: target_labeled
@@ -329,7 +331,7 @@ MonoBehaviour:
     recordingStartTime: 0
     recordingDuration: 25
   - experimentIndex: 2
-    roleIndex: 0
+    roleIndex: 1
     InputMode: 0
     experimentParameters:
     - name: target_labeled
@@ -339,7 +341,7 @@ MonoBehaviour:
     recordingStartTime: 0
     recordingDuration: 25
   - experimentIndex: 3
-    roleIndex: 0
+    roleIndex: 1
     InputMode: 0
     experimentParameters:
     - name: target_labeled
@@ -349,7 +351,7 @@ MonoBehaviour:
     recordingStartTime: 0
     recordingDuration: 25
   - experimentIndex: 4
-    roleIndex: 0
+    roleIndex: 1
     InputMode: 0
     experimentParameters:
     - name: target_labeled
@@ -359,7 +361,7 @@ MonoBehaviour:
     recordingStartTime: 0
     recordingDuration: 25
   - experimentIndex: 5
-    roleIndex: 0
+    roleIndex: 1
     InputMode: 0
     experimentParameters:
     - name: target_labeled
@@ -369,7 +371,7 @@ MonoBehaviour:
     recordingStartTime: 0
     recordingDuration: 25
   - experimentIndex: 6
-    roleIndex: 0
+    roleIndex: 1
     InputMode: 0
     experimentParameters:
     - name: target_labeled
@@ -379,7 +381,7 @@ MonoBehaviour:
     recordingStartTime: 0
     recordingDuration: 25
   - experimentIndex: 7
-    roleIndex: 0
+    roleIndex: 1
     InputMode: 0
     experimentParameters:
     - name: target_labeled
@@ -389,7 +391,7 @@ MonoBehaviour:
     recordingStartTime: 0
     recordingDuration: 25
   - experimentIndex: 8
-    roleIndex: 0
+    roleIndex: 1
     InputMode: 0
     experimentParameters:
     - name: target_labeled
