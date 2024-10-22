@@ -26,6 +26,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/scenes/scene5.unity
     guid: 4e876579884b81d4b9d1002544669d56
+  - enabled: 1
+    path: Assets/_Scenes/scenes/scene6.unity
+    guid: ccdda72ee114f9f458ca56ae9e82873b
+  - enabled: 1
+    path: Assets/_Scenes/scenes/scene7.unity
+    guid: fe1a5ce0b5fcfb64ab46c775dadd6993
+  - enabled: 1
+    path: Assets/_Scenes/scenes/scene8.unity
+    guid: bf4ddedd182f1ab4e877c2c3da1fc3f3
+  - enabled: 1
+    path: Assets/_Scenes/scenes/scene9.unity
+    guid: f03e16b163353b444b778d3b5ff9c67b
   - enabled: 0
     path: Assets/_Scenes/MainScene-night.unity
     guid: a2e9c1d3aade74424a398f9e50c01625
