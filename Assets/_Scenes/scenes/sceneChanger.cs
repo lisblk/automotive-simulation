@@ -64,18 +64,15 @@ public class SceneChanger : MonoBehaviour
     // Show the popup and start a coroutine for timer-based transition
     void TriggerPopup(string message)
     {
-        popupText.text = message; // Update the popup text based on trigger
-        
-        popupPanel.SetActive(true); // Show the popup UI
-        Time.timeScale=0;
-        StartCoroutine(PopupTimer(displayDuration)); // Start the timer
-        
+        popupText.text = message; // Update the popup text based on trigger        
+        StartCoroutine(PopupTimer(displayDuration)); // Start the timer    
         
     }
 
     IEnumerator PopupTimer(float duration)
     {
-        float remainingTime = duration;
+        // wait 5 seconds before triggering message
+        float remainingTime = 5f;
         // Optionally, allow pressing a key to skip the timer and proceed immediately
         while (remainingTime > 0)
         {
@@ -88,6 +85,21 @@ public class SceneChanger : MonoBehaviour
             yield return null;
         }
 
+        popupPanel.SetActive(true); // Show the popup UI
+        Time.timeScale=0;
+
+        remainingTime = duration;
+        // Optionally, allow pressing a key to skip the timer and proceed immediately
+        while (remainingTime > 0)
+        {
+            if (Input.GetKeyDown(KeyCode.Return)) // Press space to skip timer and proceed
+            {
+                break;
+            }
+
+            remainingTime -= Time.unscaledDeltaTime;
+            yield return null;
+        }
         // Hide the popup and load the next scene after the timer is done
         networkingManager.NextTrial();
         popupPanel.SetActive(false);
