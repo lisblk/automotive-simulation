@@ -1358,7 +1358,7 @@ GameObject:
   - component: {fileID: 7492252986797691323}
   - component: {fileID: 8043761391078894673}
   m_Layer: 5
-  m_Name: Passenger Traffic Circuit
+  m_Name: Passenger circuit links
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1512,7 +1512,7 @@ GameObject:
   - component: {fileID: 1746833722893740055}
   - component: {fileID: 6785436597310939161}
   m_Layer: 5
-  m_Name: Passenger Traffic Circuit Right
+  m_Name: Passenger circuit rechts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
