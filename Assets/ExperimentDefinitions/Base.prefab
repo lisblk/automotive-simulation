@@ -9770,17 +9770,17 @@ PrefabInstance:
     - target: {fileID: 7387523491508186194, guid: dfe1eb2bf326a0f459c687648bd18684,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 44.504944
+      value: 44.484
       objectReference: {fileID: 0}
     - target: {fileID: 7387523491508186194, guid: dfe1eb2bf326a0f459c687648bd18684,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0265676
+      value: -0.438
       objectReference: {fileID: 0}
     - target: {fileID: 7387523491508186194, guid: dfe1eb2bf326a0f459c687648bd18684,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 15.364952
+      value: 15.409
       objectReference: {fileID: 0}
     - target: {fileID: 7387523491508186194, guid: dfe1eb2bf326a0f459c687648bd18684,
         type: 3}
@@ -9835,7 +9835,7 @@ PrefabInstance:
     - target: {fileID: 7387523491508351026, guid: dfe1eb2bf326a0f459c687648bd18684,
         type: 3}
       propertyPath: m_Name
-      value: Pedestrian_Claudia (2)
+      value: Pedestrian_Claudia (left)
       objectReference: {fileID: 0}
     - target: {fileID: 7387523491508351026, guid: dfe1eb2bf326a0f459c687648bd18684,
         type: 3}
@@ -10047,7 +10047,7 @@ PrefabInstance:
     - target: {fileID: 7387523491508351026, guid: dfe1eb2bf326a0f459c687648bd18684,
         type: 3}
       propertyPath: m_Name
-      value: Pedestrian_Claudia (3)
+      value: Pedestrian_Claudia (still)
       objectReference: {fileID: 0}
     - target: {fileID: 7387523491508351026, guid: dfe1eb2bf326a0f459c687648bd18684,
         type: 3}
@@ -10160,7 +10160,7 @@ PrefabInstance:
     - target: {fileID: 4670855384036770605, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
       propertyPath: m_Name
-      value: Pedestrian_Eric (1)
+      value: Pedestrian_Eric (right2)
       objectReference: {fileID: 0}
     - target: {fileID: 4670855384036810573, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
@@ -10170,7 +10170,7 @@ PrefabInstance:
     - target: {fileID: 4670855384036810573, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9965676
+      value: -0.565676
       objectReference: {fileID: 0}
     - target: {fileID: 4670855384036810573, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
@@ -10234,7 +10234,7 @@ PrefabInstance:
     - target: {fileID: 4670855384036770605, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
       propertyPath: m_Name
-      value: Pedestrian_Eric (2)
+      value: Pedestrian_Eric (still)
       objectReference: {fileID: 0}
     - target: {fileID: 4670855384036810573, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
@@ -10308,7 +10308,7 @@ PrefabInstance:
     - target: {fileID: 4670855384036770605, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
       propertyPath: m_Name
-      value: Pedestrian_Eric
+      value: Pedestrian_Eric (right)
       objectReference: {fileID: 0}
     - target: {fileID: 4670855384036810573, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
@@ -10444,7 +10444,7 @@ PrefabInstance:
     - target: {fileID: 3383969968974815707, guid: 27f8c8a7636631d468ef3e93f563a54b,
         type: 3}
       propertyPath: m_Name
-      value: Pedestrian_BlueSuit
+      value: Pedestrian_BlueSuit (right)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10616,7 +10616,7 @@ PrefabInstance:
     - target: {fileID: 3678436171455676945, guid: 8fb627e88d79d774992db56661edcf83,
         type: 3}
       propertyPath: m_Name
-      value: PedestrianPath (2)
+      value: PedestrianPath (right)
       objectReference: {fileID: 0}
     - target: {fileID: 3678436171455676945, guid: 8fb627e88d79d774992db56661edcf83,
         type: 3}
@@ -10787,7 +10787,7 @@ PrefabInstance:
     - target: {fileID: 3678436171455676945, guid: 8fb627e88d79d774992db56661edcf83,
         type: 3}
       propertyPath: m_Name
-      value: PedestrianPath (1)
+      value: PedestrianPath (left)
       objectReference: {fileID: 0}
     - target: {fileID: 3678436171455676945, guid: 8fb627e88d79d774992db56661edcf83,
         type: 3}
@@ -10938,7 +10938,7 @@ PrefabInstance:
     - target: {fileID: 4670855384036770605, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
       propertyPath: m_Name
-      value: Pedestrian_Eric (3)
+      value: Pedestrian_Eric (still2)
       objectReference: {fileID: 0}
     - target: {fileID: 4670855384036810573, guid: 3fee7f927bcf2134691b3c62ff90dd77,
         type: 3}
@@ -11178,7 +11178,7 @@ PrefabInstance:
     - target: {fileID: 3383969968974815707, guid: 27f8c8a7636631d468ef3e93f563a54b,
         type: 3}
       propertyPath: m_Name
-      value: Pedestrian_BlueSuit (1)
+      value: Pedestrian_BlueSuit (left2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
